@@ -311,7 +311,7 @@ vector<Simulation_table> Calculate_Simulation_Table(vector<Dist_arrivedTimeTable
    //*******  print simulation table
     cout<<"\n   ******************** Simulation table ********************* "<<endl<<endl;
 
-   cout<<"customer  -->RD_IAT  -->IAT  -->RD_ST  -->AriivalTime  -->ServiceTime-->ST_Begin-->WaitingTime  -->ST_End  -->TSS  -->ITOS "<<endl<<endl;
+   cout<<"customer      RD_IAT     IAT     RD_ST     AriivalTime     ServiceTime   ST_Begin   WaitingTime    ST_End     TSS     ITOS "<<endl<<endl;
 
    for(int i=0;i<simulationTable.size();i++)
    {
