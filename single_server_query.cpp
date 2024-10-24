@@ -181,7 +181,7 @@ vector<Dist_serviceTimeTable> Calculate_ServiceTimeTable(){
 
 vector<Simulation_table> Calculate_Simulation_Table(vector<Dist_arrivedTimeTable> arrivedtime_Table,vector<Dist_serviceTimeTable> servicetime_Table)
 {
-      int customer=servicetime.size();
+      int customer=RD_servicetime.size();
 
       //simulation table create
       vector<Simulation_table> simulationTable(customer);
