@@ -214,7 +214,6 @@ vector<Simulation_table> Calculate_Simulation_Table(vector<Dist_arrivedTimeTable
                    
                    simulationTable[i].IAT=arrivedtime_Table[j].interrrivalTime;
                    
-                  //cout<< simulationTable[i].customer<<"   "<<simulationTable[i].RD_IAT<<"   "<<simulationTable[i].IAT<<endl;
                 
                    break;
               }
