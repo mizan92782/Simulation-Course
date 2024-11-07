@@ -1,3 +1,4 @@
+
 #include<bits/stdc++.h>
 using namespace std;
 
@@ -310,23 +311,24 @@ vector<Simulation_table> Calculate_Simulation_Table(vector<Dist_arrivedTimeTable
    //*******  print simulation table
     cout<<"\n   ******************** Simulation table ********************* "<<endl<<endl;
 
-   cout<<"customer      RD_IAT     IAT     RD_ST     AriivalTime     ServiceTime   ST_Begin   WaitingTime    ST_End     TSS     ITOS "<<endl<<endl;
+   cout<<"cust    RD_IAT   IAT   RD_ST   AriivalTime   ServiceTime   ST_Begin   WaitingTime  ST_End   TSS   ITOS "<<endl<<endl;
 
    for(int i=0;i<simulationTable.size();i++)
    {
 
     
-       cout<<simulationTable[i].customer<<"          ";
-       cout<<simulationTable[i].RD_IAT<<"          ";
-       cout<<simulationTable[i].IAT<<"          ";
-       cout<<simulationTable[i].AriivalTime<<"            ";
-       cout<<simulationTable[i].RD_ST<<"          ";
+       cout<<simulationTable[i].customer<<"        ";
+       cout<<simulationTable[i].RD_IAT<<"       ";
+       cout<<simulationTable[i].IAT<<"       ";
+     
+       cout<<simulationTable[i].RD_ST<<"       ";
+      cout<<simulationTable[i].AriivalTime<<"           ";
       
-       cout<<simulationTable[i].serviceTime<<"              ";
-       cout<<simulationTable[i].ST_begin<<"               ";
-      cout<<simulationTable[i].waitingTime<<"          ";
-       cout<<simulationTable[i].ST_end<<"          ";
-       cout<<simulationTable[i].TSS<<"          ";
+       cout<<simulationTable[i].serviceTime<<"            ";
+       cout<<simulationTable[i].ST_begin<<"            ";
+      cout<<simulationTable[i].waitingTime<<"           ";
+       cout<<simulationTable[i].ST_end<<"         ";
+       cout<<simulationTable[i].TSS<<"       ";
        cout<<simulationTable[i].ITOS<<"\n";
        
    }
