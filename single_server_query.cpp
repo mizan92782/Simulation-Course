@@ -299,7 +299,7 @@ vector<Simulation_table> Calculate_Simulation_Table(vector<Dist_arrivedTimeTable
        simulationTable[i].waitingTime=max(0,simulationTable[i-1].ST_end-simulationTable[i].AriivalTime );
        simulationTable[i].ST_end=simulationTable[i].ST_begin+simulationTable[i].serviceTime;
        simulationTable[i].TSS=simulationTable[i].ST_end-simulationTable[i].AriivalTime;
-       simulationTable[i].ITOS=max(0,simulationTable[i].AriivalTime -simulationTable[i-1].ST_end);
+       simulationTable[i].ITOS=(simulationTable[i].ST_begin -simulationTable[i-1].ST_end);
 
 
 

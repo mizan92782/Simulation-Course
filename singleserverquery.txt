@@ -1,0 +1,70 @@
+
+       **********   Arrival Time Table  ***********************
+
+Interrival_Time    Probability     cumulative_probability     Rangom_digit
+1                  0.125            0.125                       0 - 125
+2                  0.125            0.25                       126 - 250
+3                  0.125            0.375                       251 - 375
+4                  0.125            0.5                       376 - 500
+5                  0.125            0.625                       501 - 625
+6                  0.125            0.75                       626 - 750
+7                  0.125            0.875                       751 - 875
+8                  0.125            1                       876 - 0
+
+
+
+       **********   Service Time Table  ***********************
+
+Sercive_Time    Probability     cumulative_probability     Rangom_digit
+1                  0.1            0.1                       0 - 10
+2                  0.2            0.3                       11 - 30
+3                  0.3            0.6                       31 - 60
+4                  0.25            0.85                       61 - 85
+5                  0.1            0.95                       86 - 95
+6                  0.05            1                       96 - 0
+
+
+
+       **********   Determining time between arrival  ***********************
+
+Customer      Random Digit       time between_arrival 
+1                  0              0
+2                  913              8
+3                  727              6
+4                  15              1
+5                  948              8
+6                  309              3
+
+
+
+       **********   Determining Service time  ***********************
+
+Customer      Random Digit       service_time 
+1                  84              4
+2                  10              1
+3                  74              4
+4                  53              3
+5                  17              2
+6                  79              4
+
+
+
+   ******************** Simulation table ********************* 
+
+cust    RD_IAT   IAT   RD_ST   AriivalTime   ServiceTime   ST_Begin   WaitingTime  ST_End   TSS   ITOS 
+
+1        0       0       84       0           4            0            0           4         4       0
+2        913       8       10       8           1            8            0           9         1       4
+3        727       6       74       14           4            14            0           18         4       5
+4        15       1       53       15           3            18            3           21         6       0
+5        948       8       17       23           2            23            0           25         2       2
+6        309       3       79       26           4            26            0           30         4       1
+
+
+Averager waiting time : 0.5min
+Probability customer has to wait in queue : 16.6667 %
+Probability of idle Time : 40 %
+Average service time Time : 3
+Average time between arrival : 5.2 mins
+Average waiting time for those who wait : 3
+Average time customer spent in system  : 3.5 mins
